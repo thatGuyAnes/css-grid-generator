@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Maker</title>
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link rel='stylesheet' href='main.css' />
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Grid Maker</p>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="grid-display">
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+        </div>
+        <div class="controls collapsed" id="controls-panel">
+            <div id="toggle">
+                <i class="lni lni-chevron-right icon" id="open-controls"></i>
+                <i class="lni lni-chevron-left collapsed" id="close-controls"></i>
+            </div>
+                <main class='controls-content collapsed'>
+                    <!-- <div class='grid-controls'> -->
+                        <div class="columns">
+                            <input type="range" 
+                            id="columns" 
+                            name="columns"
+                            min="1"
+                            max="6"
+                            step="1"
+                            value="2">
+                            <label for="columns">Columns</label>
+                        </div>
+                        <div class="rows">
+                            <input type="range" 
+                            id="rows" 
+                            name="rows"
+                            min="1"
+                            max="6"
+                            step="1"
+                            value="2">
+                            <label for="rows">rows</label>
+                        </div>
+                        <button class='reset'>Reset Grid</button>
+                </main>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

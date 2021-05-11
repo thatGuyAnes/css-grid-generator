@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 10px 0 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-display {
+    border: 1px solid black;
+    order: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    width: 80%;
+    height: 100%;
+}
+
+.controls {
+    background-color: darkslategrey;
+    order: 1;
+    border: 1px solid green;
+    /* width: 3em; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: center; */
+    padding: 1em;
+    /* margin-right: 20px; */
+}
+
+.controls.collapsed {
+    order: 1;
+    border: 1px solid green;
+    width: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: center; */
+    padding: 1em;
+}
+
+.controls-content.collapsed{
+    display: none;
+}
+.controls-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    background-color: green;
+    height: 90%;
+}
+#toggle {
+    color: white;
+}
+main.controls-content>* {
+    background-color: red;
+    margin-top: 2em;
+}
+.columns{
+    border: 1px solid black;
+}
+.rows {
+    border: 1px solid black;
+
+}
+#columns {
+    border: 1px solid black;
+}
+.box {
+    border: 1px dotted blue;
+    /* background-color: cyan; */
+}
+.box:hover {
+    background-color: darkblue;
+    opacity: .2;
+}
+
+.collapsed{
+    display: none;
+}
